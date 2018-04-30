@@ -20,8 +20,13 @@
 
             var options = {
                 title: 'My Daily Activities',
-                is3D: true, // 3D Pie Chart
+                //is3D: true, // 3D Pie Chart
                 pieStartAngle: 100, // rotate the chart clockwise 100 degrees
+                slices: { // separate pie slices
+                    1: { offset: 0.3 },
+                    2: { offset: 0.2 },
+                    3: { offset: 0.1 },
+                }
             };
 
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
