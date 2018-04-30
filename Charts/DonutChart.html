@@ -9,7 +9,6 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-
             var data = google.visualization.arrayToDataTable([
                 ['Effort', 'Amount given'],
                 ['My all', 100],
@@ -23,12 +22,12 @@
                 legend: 'none'
             };
 
-            var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
             chart.draw(data, options);
         }
     </script>
 </head>
 <body>
-    <div id="donut_single" style="width: 900px; height: 500px;"></div>
+    <div id="donutchart" style="width: 900px; height: 500px;"></div>
 </body>
 </html>
