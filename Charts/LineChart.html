@@ -114,8 +114,12 @@
             };
 
             var chart = new google.charts.Line(document.getElementById('linechart'));
-
             chart.draw(data, google.charts.Line.convertOptions(options));
+
+            //var view = new google.visualization.DataView(data);
+            //view.setRows(view.getFilteredRows([{ column: 0, minValue: new Date(2007, 0, 1) }]));
+            //var table = new google.visualization.Table(document.getElementById('linechart'));
+            //table.draw(view, { sortColumn: 0 });
         }
     </script>
 </head>
